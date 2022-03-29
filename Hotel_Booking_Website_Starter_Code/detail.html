@@ -7,14 +7,26 @@
     <div>
         <div id="Header">
             <div>
-            <img src="assests/images/logo.png" height="200px" width="150px" alt="logo">
-            <a href="login.html" target="_blank">Login</a>
+            <a href="index.html"><img src="assests/images/logo.png" height="200px" width="150px" alt="logo"></a>
+            <a href="login.html">Login</a>
             </div>
         </div>
         <div id="Content">
             <div>
                 <a href="detail.html"> <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"></a><br/>
-                <a href="payment.html">Book Now</a>
+                <form action="payment.html" method="get">
+                    <label for="adults">Adults:</label>
+                    <input type="number" name="adults" min="1" required><br/>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" required><br/>
+                    <label for="from">From Date:</label>
+                    <input type="date" name="from" required><br/>
+                    <label for="to">To Date:</label>
+                    <input type="date" name="to" required><br/>
+                    <label for="total">Total:</label>
+                    <input type="text" name="total"  readonly><br/>
+                    <input type="submit" name="book" value="Book Now"></a>
+                </form>
                 <h2>Radisson Blue Hotel</h2>
                 <p>RATING</p>
                 <p>5 Star</p>
@@ -33,12 +45,12 @@
         <div id="Footer">
             <div>
                 <div>
-                    <a href="contact.html" target="_blank">Contact Us</a>
+                    <a href="contact.html">Contact Us</a>
                     <br/>
                     <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" height="20px" width="22px"></a>
                     <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" height="20px" width="22px"></a>
                     <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" height="20px" width="22px"></a>
-                    <p>&#169 2020 ROOM SEARCH PVT LTD</p>
+                    <p>&#169 2020 ROOM SEARCH PVT. LTD</p>
                 </div>
            </div>
         </div>
