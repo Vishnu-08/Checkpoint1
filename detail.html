@@ -10,11 +10,29 @@
         body{
             height: 100%;
             width: 100%;
+            background-color: #e0e0e0;
+            margin: 0%;
         }
         section img{
             height: 500px;
             width: 500px;
         
+        }
+        header{
+            background-color: rosybrown;
+        }
+        footer{
+            background-color: rosybrown;
+        }
+        #hotel{
+            margin-top: 2%;
+            margin-left: 4%;
+            margin-right: 4%;
+        }
+        #form{
+            margin-top: 0%;
+            margin-right: 4%;
+            margin-bottom: 1%;
         }
     </style>
 </head>
@@ -24,9 +42,9 @@
             <a href="login.html">Login</a>
         </header>
         <section>
-            <div>
+            <div id="hotel">
                 <a href="detail.html"> <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"></a><br/>
-                <form action="payment.html" method="get">
+                <form action="payment.html" method="get" id="form">
                     <label for="adults">Adults:</label>
                     <input type="number" name="adults" min="1" required><br/>
                     <label for="name">Name:</label>
